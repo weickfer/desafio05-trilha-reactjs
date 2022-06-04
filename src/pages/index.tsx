@@ -22,7 +22,7 @@ export default function Home(): JSX.Element {
     async ctx => {
       const pageParam = ctx.pageParam || null;
 
-      const response = await api.get('/images', {
+      const response = await api.get('/api/images', {
         params: {
           after: pageParam,
         },
